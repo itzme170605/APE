@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "APE",
+    "description": "Anti-Phishing Extension",
+    "version": "0.0.1",
+    "action": {
+        "default_title": "APE",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
