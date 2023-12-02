@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(240, 248, 255, 0.959);
+
+}
+h1{
+    color: aliceblue;
+    font-weight: 600;
+}
+p{
+    color: aliceblue;
+    font-size: medium;
+    padding: 10px 0 30px 0;
+    justify-content: center;
+    
+}
+
+body{
+    background-color: rgb(33, 33, 33);
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* overflow: hidden; */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    /* background: rgba(0, 0, 0, 0.721); */
+    background: linear-gradient(rgb(25, 25, 25), transparent);
+    
+
+
+}
+
+.logo {
+    width: 100px;
+    
+}
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgb(6, 6, 6), transparent);
+    z-index: 100;
+}
+.nav-logo p a{
+    text-decoration: none;
+    color: rgb(246, 246, 246);
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.nav-logo p a:hover , .nav-logo p a.active{
+    transition: 0.3s ease ;
+    color: rgb(194, 31, 31);
+}
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 600;
+    color: aliceblue;
+    padding: 15px;
+    margin: 0 25px; 
+    
+}
+.nav-menu ul li a{
+    animation: slideRight 0.3s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.nav-menu ul li a:hover, .nav-menu ul li a.active{
+    transition: 0.5s ease;
+    border-bottom: 2px solid rgba(5,224,235,0.5);
+    color: rgba(52, 237, 247, 0.5);
+}
+
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+#registerBtn{
+    margin-right: 15px;
+
+}
+
+.nav-button button:hover, .nav-button button.active{
+    transition: 0.3s ease;
+    background: rgba(5,224,235,0.7);
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.home-content h3 span {
+  color: rgba(5, 224, 235, 0.5);
+}
+.home-content h1 {
+  color: #ffffffb0;
+  font-size: 90px;
+  font-weight: 900;
+  margin: -7px 0;
+  margin-left: 60px;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.Byline {
+  color: #ff2727;
+  font-size: 90px;
+  font-weight: 900;
+  /* font-family: cursive; */
+  margin: -14px 0;
+  margin-left: 120px;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content p {
+  font-size: 18px;
+  /* font-family: cursive; */
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+button:hover,button.active{
+    transition: 0.3s ease;
+    background: rgba(5,224,235,0.7);
+}
+
+.extension-content ul, li {
+  text-decoration: dotted ;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
